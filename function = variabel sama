@@ -1,0 +1,21 @@
+//nama project : fungsi4_var_sama
+//contoh untuk menunjukkan kalau variable lokal 
+//dan variabel eksternal bernama sama
+
+#include <iostream>
+#include <conio.h>
+
+int fernando=55; //variabel eksternal 
+void bravo();
+void main()
+{
+	cout<<"main () : fernando = "<<fernando<<endl;
+	bravo;
+	cout<<"main () : fernando = "<<fernando<<endl;
+}
+void bravo()
+{
+	int fernando; //variabel lokal 
+	fernando = 77; 
+	cout<<"Bravo() : fernando = "<<fernando<<endl;
+}
