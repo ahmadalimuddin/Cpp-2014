@@ -1,0 +1,15 @@
+//nama fungsi :  fungsi_opr_lingkup 
+//contoh pemakaian operator resolusi lingkup (::)
+
+#include <iostream>
+#include <conio.h>
+
+int x=50; //variabel eksternal 
+void main()
+{
+	double x; //definisi variabel lokal 
+	x = 5.678901234; //variabel lokal yang diberi nilai 
+	cout<<x<<" "<<::x<<endl;
+	::x=77; variabel eksternal yang diberi nilai
+	cout<<x<<" "<<::x<<endl; 
+}
