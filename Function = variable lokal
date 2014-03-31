@@ -1,0 +1,22 @@
+//nama project : function2_variabel_lokal
+//contoh untuk memperlihatkan efek variabel otomatis (lokal)
+
+#include <iostream>
+#include <conio.h>
+
+void alpha(); //prototype fungsi 
+void main()
+{
+	int x = 22 ; //variable lokal pada main()
+	double y=2.22; //begitu juga variable ini 
+
+	cout<<"pada main (): x = "<<x<<"y = "<<y<<endl;
+	alpha(); //panggil fungsi alpha
+	cout<<"pada main () : x = "<<x<<"y = "<<y<<endl;
+}
+void alpha()
+{
+	int x=20; //variable lokal pada alpha
+	double y= 3.14; //begitu juga variable ini
+	cout<<"pada alpha() : x = "<<x<<"y = "<<y<<endl;
+}
