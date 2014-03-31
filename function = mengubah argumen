@@ -1,0 +1,49 @@
+//nama project : fungsi7_ubah_arg
+//contoh untuk memperlihatkan efek pengubahan 
+//nilai argumen fungsi dari dalam fungsi
+
+#include <iostream>
+#include <conio.h>
+
+void tukar (int a, int b); //prototype fungsi 
+void tukar_1(int &a, int &b); //perubahan disini dan pada definisi fungsi
+
+void main()
+{
+	int a, b; 
+	a = 55;
+	b = 77;
+	cout<<"main () : a = "<<a<<endl;
+	cout<<"main () : b = "<<b<<endl;
+	tukar(a,b);
+	cout<<"main () : a = "<<a<<endl;
+	cout<<"main () : b = "<<b<<endl;
+	cout<<endl;
+	tukar_1(a,b);
+	cout<<"main () : a = "<<a<<endl;
+	cout<<"main () : b = "<<b<<endl;
+}
+
+//definisi fungsi untuk menukar nilai 
+void tukar (int a, int b)
+{
+	int tmp;
+	tmp = a;
+	a = b; 
+	b = tmp; 
+	cout<<"tukar () : a = "<<a<<endl;
+	cout<<"tukar () : a = "<<b<<endl;
+}
+
+//definisi fungsi untuk menukarkan nilai 
+void tukar_1(int &a, int &b)	//bagian ini juga diubah
+{
+	int tmp;
+	tmp = a; 
+	a = b
+	b = tmp; 
+	cout<<"tukar () : a = "<<a<<endl;
+	cout<<"tukar () : b = "<<b<<endl;
+}
+
+}
