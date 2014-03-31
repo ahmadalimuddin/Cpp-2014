@@ -1,0 +1,19 @@
+//nama project : function3_variable_eksternal
+//contoh variable eksternal 
+
+int oblada = 550; //variable eksternal 
+void tambah(); //prototype fungsi 
+
+void main()
+{
+	cout<<oblada<<endl;
+	tambah();
+	
+	cout<<oblada<<endl;
+	tambah();
+	cout<<oblada<<endl;
+}
+void tambah() //definisi fungsi 
+{
+	oblada++; //variabel eksternal dinaikkan
+}
