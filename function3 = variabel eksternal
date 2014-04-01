@@ -1,6 +1,10 @@
 //nama project : function3_variable_eksternal
 //contoh variable eksternal 
 
+#include <iostream>
+
+using namespace std;
+
 int oblada = 550; //variable eksternal 
 void tambah(); //prototype fungsi 
 
