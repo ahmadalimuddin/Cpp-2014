@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <conio.h>
+using namespace std;
 
 void alpha(); //prototype fungsi 
 void main()
