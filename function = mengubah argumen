@@ -5,6 +5,8 @@
 #include <iostream>
 #include <conio.h>
 
+using namespace std;
+
 void tukar (int a, int b); //prototype fungsi 
 void tukar_1(int &a, int &b); //perubahan disini dan pada definisi fungsi
 
