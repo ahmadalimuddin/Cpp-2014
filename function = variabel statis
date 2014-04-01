@@ -1,8 +1,8 @@
 //nama project : fungsi5_var_statis
 //contoh untuk menunjukkan efek variable statis 
-
 #include <iostream>
 #include <conio.h>
+using namespace std;
 
 void saya_ingat(); //prototype fungsi 
 void saya_ingat_2(); //prototype fungsi
@@ -27,7 +27,7 @@ void saya_ingat()
 	mamamia++; //naikkan sebesar 1 
 	cout<<"	saya_ingat() : mamamia = "<<mamamia<<endl;
 }
-void saya_ingat_2();
+void saya_ingat_2()
 {
 	int mamamia = 77; //bukan variabel statis
 	mamamia++; //naikkan sebesar 1
