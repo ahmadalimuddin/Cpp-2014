@@ -10,7 +10,7 @@ void main()
 {
 	double x; //definisi variabel lokal 
 	x = 5.678901234; //variabel lokal yang diberi nilai 
-	cout<<x<<" "<<::x<<endl;
-	::x=77; variabel eksternal yang diberi nilai
-	cout<<x<<" "<<::x<<endl; 
+	cout<<x<<"  "<<::x<<endl;
+	::x=77; //variabel eksternal yang diberi nilai
+	cout<<x<<"  "<<::x<<endl; 
 }
